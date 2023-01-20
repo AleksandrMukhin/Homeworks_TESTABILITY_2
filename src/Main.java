@@ -7,8 +7,8 @@ public class Main {
 
         double weight = 80; // вес в кг.
         double height = 1.60; // рост в метрах
-        double bodyMassIndex = service.calculate(height);
+        double bodyMassIndex = service.calculate(height, weight);
 
-        System.out.println("Индекс массы тела: " + weight / bodyMassIndex);
+        System.out.println("Индекс массы тела: " + bodyMassIndex);
     }
 }
